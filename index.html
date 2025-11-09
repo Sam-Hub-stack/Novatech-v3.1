@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaTech — Where Style Meets Power</title>
+
+  <!-- Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" type="image/png">
+</head>
+<body>
+  <header id="header" class="site-header" role="banner">
+    <div class="container nav-wrap">
+      <div class="brand" aria-hidden="false">
+        <img src="https://cdn-icons-png.flaticon.com/512/2965/2965358.png" alt="NovaTech logo" class="brand-fav">
+        <div>
+          <h1 class="brand-title">NovaTech</h1>
+          <p class="brand-tag">Where Style Meets Power</p>
+        </div>
+      </div>
+
+      <nav class="navbar" aria-label="Primary navigation">
+        <button id="menuToggle" class="hamburger" aria-expanded="false" aria-controls="menu"><i class="fa fa-bars"></i></button>
+
+        <ul id="menu" class="menu" role="menubar">
+          <li role="none"><a class="nav-link active" role="menuitem" href="#home"><i class="fa fa-home"></i><span>Home</span></a></li>
+          <li role="none"><a class="nav-link" role="menuitem" href="#products"><i class="fa fa-store"></i><span>Shop</span></a></li>
+          <li role="none"><a class="nav-link" role="menuitem" href="#services"><i class="fa fa-gear"></i><span>Services</span></a></li>
+          <li role="none"><a class="nav-link" role="menuitem" href="#about"><i class="fa fa-info-circle"></i><span>About</span></a></li>
+          <li role="none"><a class="nav-link" role="menuitem" href="#contact"><i class="fa fa-phone"></i><span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="cartBtn" class="cart-btn" aria-label="Open cart" title="Open cart">
+          <i id="cartIcon" class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span id="cartCount" class="cart-count" aria-live="polite" data-count="0">0</span>
+        </button>
+
+        <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle theme" title="Toggle theme">
+          <i id="themeIcon" class="fa fa-moon" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Premium tech & accessories — delivered in Nairobi</h2>
+          <p>Stylish. Reliable. Affordable. NovaTech brings top-quality gadgets, pro installation & repair, and easy local delivery.</p>
+          <div class="hero-cta">
+            <a href="#products" class="btn primary">Shop Now</a>
+            <a href="#services" class="btn ghost">See Services</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="https://images.unsplash.com/photo-1526178612213-6e3e9a0b9b4f?auto=format&fit=crop&w=1400&q=80" alt="Modern gadgets" />
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2 class="section-title">Shop — Categories</h2>
+
+        <div class="category-tabs" role="tablist" id="categoryTabs">
+          <button class="cat-btn active" data-filter="all">All</button>
+          <button class="cat-btn" data-filter="phones">Smartphones</button>
+          <button class="cat-btn" data-filter="laptops">Laptops</button>
+          <button class="cat-btn" data-filter="accessories">Accessories</button>
+          <button class="cat-btn" data-filter="smart">Smart Home</button>
+          <button class="cat-btn" data-filter="gaming">Gaming</button>
+        </div>
+
+        <div id="productGrid" class="product-grid" aria-live="polite">
+          <!-- Product cards (each has .meta with data attributes) -->
+          <!-- PHONES (5) -->
+          <article class="product-card" data-category="phones" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="iPhone 15 Pro">
+            <div class="product-info">
+              <h3>iPhone 15 Pro</h3>
+              <p class="muted">A17 Pro • 256GB</p>
+              <div class="product-actions">
+                <button class="btn add-cart" title="Add to cart" aria-label="Add iPhone 15 Pro"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="iphone-15-pro" data-img="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80" data-title="iPhone 15 Pro" data-price="279999" data-desc="Apple iPhone 15 Pro, A17 Pro chip, 48MP camera, long battery life."></div>
+          </article>
+
+          <article class="product-card" data-category="phones" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1603898037225-3e09d21d22b7?auto=format&fit=crop&w=900&q=80" alt="Samsung Galaxy S24 Ultra">
+            <div class="product-info">
+              <h3>Samsung Galaxy S24 Ultra</h3>
+              <p class="muted">Flagship • Pro camera</p>
+              <div class="product-actions">
+                <button class="btn add-cart" title="Add to cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="s24-ultra" data-img="https://images.unsplash.com/photo-1603898037225-3e09d21d22b7?auto=format&fit=crop&w=1600&q=80" data-title="Samsung Galaxy S24 Ultra" data-price="219999" data-desc="Samsung S24 Ultra with pro-grade camera and AI features."></div>
+          </article>
+
+          <article class="product-card" data-category="phones" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1610945265077-50e7f1b34e04?auto=format&fit=crop&w=900&q=80" alt="OnePlus 12">
+            <div class="product-info">
+              <h3>OnePlus 12</h3>
+              <p class="muted">120Hz • Fast charge</p>
+              <div class="product-actions">
+                <button class="btn add-cart" title="Add to cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="oneplus-12" data-img="https://images.unsplash.com/photo-1610945265077-50e7f1b34e04?auto=format&fit=crop&w=1600&q=80" data-title="OnePlus 12" data-price="129999" data-desc="Fast, smooth performance and quick charging."></div>
+          </article>
+
+          <article class="product-card" data-category="phones" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1598300051383-2c2b0b9f8bb1?auto=format&fit=crop&w=900&q=80" alt="Google Pixel 8">
+            <div class="product-info">
+              <h3>Google Pixel 8</h3>
+              <p class="muted">Tensor G3 • Clean Android</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="pixel-8" data-img="https://images.unsplash.com/photo-1598300051383-2c2b0b9f8bb1?auto=format&fit=crop&w=1600&q=80" data-title="Google Pixel 8" data-price="129999" data-desc="Great camera software and timely Android updates."></div>
+          </article>
+
+          <article class="product-card" data-category="phones" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1590523271530-cf88f6f4e8be?auto=format&fit=crop&w=900&q=80" alt="iPad Air">
+            <div class="product-info">
+              <h3>iPad Air</h3>
+              <p class="muted">M1 • Portable</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="ipad-air" data-img="https://images.unsplash.com/photo-1590523271530-cf88f6f4e8be?auto=format&fit=crop&w=1600&q=80" data-title="iPad Air" data-price="119999" data-desc="Portable tablet for creativity and entertainment."></div>
+          </article>
+
+          <!-- Laptops (4 shown) -->
+          <article class="product-card" data-category="laptops" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=900&q=80" alt="MacBook Air M3">
+            <div class="product-info">
+              <h3>MacBook Air M3</h3>
+              <p class="muted">M3 • Lightweight</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="macbook-air-m3" data-img="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1600&q=80" data-title="MacBook Air M3" data-price="219999" data-desc="Light, powerful MacBook Air with the new M3 chip."></div>
+          </article>
+
+          <article class="product-card" data-category="laptops" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1587614382346-ac1b5b36f9b0?auto=format&fit=crop&w=900&q=80" alt="Dell XPS 15">
+            <div class="product-info">
+              <h3>Dell XPS 15</h3>
+              <p class="muted">Intel i7 • Creator laptop</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="dell-xps-15" data-img="https://images.unsplash.com/photo-1587614382346-ac1b5b36f9b0?auto=format&fit=crop&w=1600&q=80" data-title="Dell XPS 15" data-price="169999" data-desc="Premium Windows laptop for creators and pros."></div>
+          </article>
+
+          <article class="product-card" data-category="laptops" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Lenovo ThinkPad X1">
+            <div class="product-info">
+              <h3>Lenovo ThinkPad X1</h3>
+              <p class="muted">Business • Durable</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="thinkpad-x1" data-img="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1600&q=80" data-title="Lenovo ThinkPad X1" data-price="189999" data-desc="Reliable business laptop with great keyboard and battery."></div>
+          </article>
+
+          <article class="product-card" data-category="laptops" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1587825140708-3ea6a6b4f1d8?auto=format&fit=crop&w=900&q=80" alt="ASUS ROG Zephyrus">
+            <div class="product-info">
+              <h3>ASUS ROG Zephyrus</h3>
+              <p class="muted">Gaming powerhouse</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="asus-rog" data-img="https://images.unsplash.com/photo-1587825140708-3ea6a6b4f1d8?auto=format&fit=crop&w=1600&q=80" data-title="ASUS ROG Zephyrus" data-price="249999" data-desc="Gaming laptop built for high FPS and streaming."></div>
+          </article>
+
+          <!-- ACCESSORIES (5) -->
+          <article class="product-card" data-category="accessories" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1512446814065-7b3b6d230c9b?auto=format&fit=crop&w=900&q=80" alt="Logitech MX Master 3S">
+            <div class="product-info">
+              <h3>Logitech MX Master 3S</h3>
+              <p class="muted">Ergonomic • Wireless</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="logi-mx-3s" data-img="https://images.unsplash.com/photo-1512446814065-7b3b6d230c9b?auto=format&fit=crop&w=1600&q=80" data-title="Logitech MX Master 3S" data-price="11999" data-desc="Exceptional ergonomic mouse for productivity."></div>
+          </article>
+
+          <article class="product-card" data-category="accessories" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80" alt="Anker PowerCore">
+            <div class="product-info">
+              <h3>Anker PowerCore 20000</h3>
+              <p class="muted">High capacity</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="anker-20000" data-img="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80" data-title="Anker PowerCore 20000" data-price="4999" data-desc="Reliable large-capacity powerbank."></div>
+          </article>
+
+          <article class="product-card" data-category="accessories" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1580894894519-bc9dc38e2ec1?auto=format&fit=crop&w=900&q=80" alt="Sony WH-1000XM5">
+            <div class="product-info">
+              <h3>Sony WH-1000XM5</h3>
+              <p class="muted">Noise-cancelling</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="sony-wh1000xm5" data-img="https://images.unsplash.com/photo-1580894894519-bc9dc38e2ec1?auto=format&fit=crop&w=1600&q=80" data-title="Sony WH-1000XM5" data-price="34999" data-desc="Industry-leading noise cancellation and comfort."></div>
+          </article>
+
+          <article class="product-card" data-category="accessories" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1606813902770-3c29f2a9e4d8?auto=format&fit=crop&w=900&q=80" alt="Razer Huntsman">
+            <div class="product-info">
+              <h3>Razer Huntsman</h3>
+              <p class="muted">Mechanical • RGB</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="razer-huntsman" data-img="https://images.unsplash.com/photo-1606813902770-3c29f2a9e4d8?auto=format&fit=crop&w=1600&q=80" data-title="Razer Huntsman" data-price="14999" data-desc="Top-tier mechanical keyboard for gamers."></div>
+          </article>
+
+          <!-- SMART HOME (3) -->
+          <article class="product-card" data-category="smart" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1598300051383-2c2b0b9f8bb1?auto=format&fit=crop&w=900&q=80" alt="Philips Hue">
+            <div class="product-info">
+              <h3>Philips Hue Starter Kit</h3>
+              <p class="muted">Smart bulbs • App</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="philips-hue" data-img="https://images.unsplash.com/photo-1598300051383-2c2b0b9f8bb1?auto=format&fit=crop&w=1600&q=80" data-title="Philips Hue Starter Kit" data-price="7999" data-desc="Smart bulbs controllable by app or voice."></div>
+          </article>
+
+          <article class="product-card" data-category="gaming" tabindex="0">
+            <img class="product-img" src="https://images.unsplash.com/photo-1606813902770-3c29f2a9e4d8?auto=format&fit=crop&w=900&q=80" alt="Pro Gamer Chair">
+            <div class="product-info">
+              <h3>Pro Gamer Chair</h3>
+              <p class="muted">Ergonomic • RGB</p>
+              <div class="product-actions">
+                <button class="btn add-cart"><i class="fa fa-circle-plus"></i></button>
+                <button class="btn details">View</button>
+              </div>
+            </div>
+            <div class="meta" data-id="pro-gamer-chair" data-img="https://images.unsplash.com/photo-1606813902770-3c29f2a9e4d8?auto=format&fit=crop&w=1600&q=80" data-title="Pro Gamer Chair" data-price="39999" data-desc="Comfortable chair for long sessions."></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="service-grid">
+          <div class="service-card"><i class="fa fa-screwdriver-wrench icon-large"></i><h3>Gadget Repairs</h3><p>Professional repairs with a 90-day warranty.</p></div>
+          <div class="service-card"><i class="fa fa-wrench icon-large"></i><h3>Installations</h3><p>Smart home & entertainment setup by trained techs.</p></div>
+          <div class="service-card"><i class="fa fa-headset icon-large"></i><h3>Consultation</h3><p>Personalized advice for your tech setup.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About NovaTech</h2>
+        <p><strong>NovaTech</strong> — based in Nairobi since 2018 — brings premium technology and exceptional service to Kenyan homes and businesses. We source authentic products, offer expert installation and fast local delivery.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Contact & Location</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Email:</strong> support@novatech.co.ke</p>
+            <p><strong>Phone:</strong> +254 712 345 678</p>
+            <p><strong>Address:</strong> Moi Avenue, Nairobi (Opposite I&M Bank)</p>
+            <p>Open Mon–Sat, 8:00 — 18:00</p>
+          </div>
+          <div class="map-wide">
+            <iframe width="100%" height="320" style="border:0;border-radius:12px" loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.856337137098!2d36.81881287497351!3d-1.2832536356142122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d51c6b2fd7%3A0x19e894e8899db2f7!2sMoi%20Avenue%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1700000000000">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FLOATING CART -->
+  <button id="floatingCart" class="floating-cart" aria-label="Open cart">
+    <i class="fa fa-shopping-cart"></i>
+    <span id="floatCount" class="float-count" data-count="0">0</span>
+  </button>
+
+  <!-- CART DRAWER -->
+  <aside id="cartDrawer" class="cart-drawer" aria-hidden="true" role="dialog" aria-labelledby="cartTitle">
+    <div class="cart-panel">
+      <header class="cart-header">
+        <h3 id="cartTitle">Your Cart</h3>
+        <div class="cart-header-actions">
+          <button id="clearCart" class="btn small ghost">Clear</button>
+          <button id="closeCart" class="drawer-close" aria-label="Close cart">&times;</button>
+        </div>
+      </header>
+
+      <div id="cartItems" class="cart-items" tabindex="0"></div>
+
+      <footer class="cart-footer">
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">KSh 0</strong>
+        </div>
+        <div class="cart-note">Items persist on this browser (localStorage).</div>
+      </footer>
+    </div>
+  </aside>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <div id="productModal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="document">
+      <button id="modalClose" class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-content">
+        <div class="modal-image"><img id="modalImg" src="" alt=""></div>
+        <div class="modal-info">
+          <h3 id="modalTitle">Title</h3>
+          <p id="modalDesc">Description</p>
+          <p class="modal-price" id="modalPrice">KSh 0</p>
+          <div class="modal-actions">
+            <button id="modalAdd" class="btn primary"><i class="fa fa-cart-plus"></i> Add to Cart</button>
+            <button id="modalCloseBtn" class="btn ghost">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOASTS (top-right) -->
+  <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
