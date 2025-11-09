@@ -145,12 +145,12 @@ Save → Wait a few seconds → Your live site link will appear:
 
 arduino
 Copy code
-https://yourusername.github.io/novatech-store/
+https://sam-hub-stack.github.io/Novatech-v3.1/
 🧾 License
 This project is licensed under the MIT License — you’re free to use, modify, and distribute with credit.
 
 👨‍💻 Author
-Developed by: Travis (🇰🇪 Kenya)
+Developed by: Mbere (🇰🇪 Kenya)
 Role: Front-End Web Developer & Designer
 Version: v3.3 – Luxury Interactive Edition
 GitHub: github.com/yourusername
