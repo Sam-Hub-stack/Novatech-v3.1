@@ -113,7 +113,7 @@ Copy code
 ### 📍 Contact
 - Visit our store or view our embedded Google Map.  
 - Email: `support@novatech.com`  
-- Phone: `+254 712 345 678`  
+- Phone: `+254 794 247 366`  
 
 ---
 
@@ -122,7 +122,7 @@ Copy code
 ### Local Setup
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/yourusername/novatech-store.git
+   git clone https://github.com/Sam-Hub-stack/Novatech-v3.1
 Open the folder:
 
 bash
