@@ -153,7 +153,7 @@ This project is licensed under the MIT License — you’re free to use, modify,
 Developed by: Mbere (🇰🇪 Kenya)
 Role: Front-End Web Developer & Designer
 Version: v3.3 – Luxury Interactive Edition
-GitHub: github.com/yourusername
+GitHub: https://github.com/Sam-Hub-stack
 
 “Where Style Meets Power.”
 
